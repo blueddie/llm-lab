@@ -1,0 +1,516 @@
+[
+  {
+    "nodes": [
+      {
+        "name": "아동",
+        "type": "주체"
+      },
+      {
+        "name": "법정대리인",
+        "type": "주체"
+      },
+      {
+        "name": "개인정보",
+        "type": "정보유형"
+      },
+      {
+        "name": "고유식별정보",
+        "type": "정보유형"
+      },
+      {
+        "name": "제22조의2",
+        "type": "법조항"
+      },
+      {
+        "name": "제5조",
+        "type": "법조항"
+      },
+      {
+        "name": "제64조의2",
+        "type": "법조항"
+      },
+      {
+        "name": "제71조",
+        "type": "법조항"
+      },
+      {
+        "name": "동의 획득",
+        "type": "의무"
+      },
+      {
+        "name": "연령 확인",
+        "type": "의무"
+      },
+      {
+        "name": "과징금",
+        "type": "제재"
+      },
+      {
+        "name": "징역",
+        "type": "제재"
+      },
+      {
+        "name": "벌금",
+        "type": "제재"
+      },
+      {
+        "name": "과태료",
+        "type": "제재"
+      }
+    ],
+    "relations": [
+      {
+        "source": "아동",
+        "relation": "보호주체",
+        "target": "법정대리인"
+      },
+      {
+        "source": "법정대리인",
+        "relation": "필요의무",
+        "target": "동의 획득"
+      },
+      {
+        "source": "아동",
+        "relation": "필요의무",
+        "target": "연령 확인"
+      },
+      {
+        "source": "법정대리인",
+        "relation": "필요의무",
+        "target": "동의 획득"
+      },
+      {
+        "source": "법정대리인 동의 의무 위반",
+        "relation": "위반시제재",
+        "target": "징역"
+      },
+      {
+        "source": "법정대리인 동의 의무 위반",
+        "relation": "위반시제재",
+        "target": "과징금"
+      },
+      {
+        "source": "법정대리인 동의 의무 위반",
+        "relation": "위반시제재",
+        "target": "벌금"
+      },
+      {
+        "source": "개인정보",
+        "relation": "근거법령",
+        "target": "제22조의2"
+      },
+      {
+        "source": "개인정보",
+        "relation": "근거법령",
+        "target": "제5조"
+      },
+      {
+        "source": "개인정보",
+        "relation": "근거법령",
+        "target": "제64조의2"
+      },
+      {
+        "source": "개인정보",
+        "relation": "근거법령",
+        "target": "제71조"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "name": "민감정보",
+        "type": "정보유형"
+      },
+      {
+        "name": "개인정보처리자",
+        "type": "주체"
+      },
+      {
+        "name": "사상·신념",
+        "type": "정보유형"
+      },
+      {
+        "name": "노동조합·정당의 가입·탈퇴",
+        "type": "정보유형"
+      },
+      {
+        "name": "정치적 견해",
+        "type": "정보유형"
+      },
+      {
+        "name": "건강",
+        "type": "정보유형"
+      },
+      {
+        "name": "성생활",
+        "type": "정보유형"
+      },
+      {
+        "name": "제23조",
+        "type": "법조항"
+      },
+      {
+        "name": "제15조",
+        "type": "법조항"
+      },
+      {
+        "name": "제17조",
+        "type": "법조항"
+      },
+      {
+        "name": "제29조",
+        "type": "법조항"
+      },
+      {
+        "name": "제30조",
+        "type": "법조항"
+      },
+      {
+        "name": "제18조",
+        "type": "법조항"
+      },
+      {
+        "name": "안전성 확보 조치",
+        "type": "의무"
+      },
+      {
+        "name": "동의 획득",
+        "type": "의무"
+      },
+      {
+        "name": "비공개 선택 방법 안내",
+        "type": "의무"
+      },
+      {
+        "name": "과징금",
+        "type": "제재"
+      },
+      {
+        "name": "징역",
+        "type": "제재"
+      },
+      {
+        "name": "벌금",
+        "type": "제재"
+      },
+      {
+        "name": "과태료",
+        "type": "제재"
+      }
+    ],
+    "relations": [
+      {
+        "source": "민감정보",
+        "relation": "하위유형",
+        "target": "개인정보"
+      },
+      {
+        "source": "민감정보",
+        "relation": "포함",
+        "target": "사상·신념"
+      },
+      {
+        "source": "민감정보",
+        "relation": "포함",
+        "target": "노동조합·정당의 가입·탈퇴"
+      },
+      {
+        "source": "민감정보",
+        "relation": "포함",
+        "target": "정치적 견해"
+      },
+      {
+        "source": "민감정보",
+        "relation": "포함",
+        "target": "건강"
+      },
+      {
+        "source": "민감정보",
+        "relation": "포함",
+        "target": "성생활"
+      },
+      {
+        "source": "개인정보처리자",
+        "relation": "필요의무",
+        "target": "동의 획득"
+      },
+      {
+        "source": "개인정보처리자",
+        "relation": "필요의무",
+        "target": "비공개 선택 방법 안내"
+      },
+      {
+        "source": "민감정보",
+        "relation": "처리원칙",
+        "target": "제23조"
+      },
+      {
+        "source": "민감정보",
+        "relation": "위반시제재",
+        "target": "과징금"
+      },
+      {
+        "source": "민감정보",
+        "relation": "위반시제재",
+        "target": "징역"
+      },
+      {
+        "source": "민감정보",
+        "relation": "위반시제재",
+        "target": "벌금"
+      },
+      {
+        "source": "민감정보",
+        "relation": "위반시제재",
+        "target": "과태료"
+      },
+      {
+        "source": "개인정보처리자",
+        "relation": "필요의무",
+        "target": "안전성 확보 조치"
+      },
+      {
+        "source": "제23조",
+        "relation": "근거법령",
+        "target": "제15조"
+      },
+      {
+        "source": "제23조",
+        "relation": "근거법령",
+        "target": "제17조"
+      },
+      {
+        "source": "제23조",
+        "relation": "근거법령",
+        "target": "제29조"
+      },
+      {
+        "source": "제23조",
+        "relation": "근거법령",
+        "target": "제30조"
+      },
+      {
+        "source": "제18조",
+        "relation": "근거법령",
+        "target": "제23조"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "name": "고유식별정보",
+        "type": "정보유형"
+      },
+      {
+        "name": "개인정보처리자",
+        "type": "주체"
+      },
+      {
+        "name": "법정대리인",
+        "type": "주체"
+      },
+      {
+        "name": "보호위원회",
+        "type": "주체"
+      },
+      {
+        "name": "제24조",
+        "type": "법조항"
+      },
+      {
+        "name": "제15조제2항",
+        "type": "법조항"
+      },
+      {
+        "name": "제17조제2항",
+        "type": "법조항"
+      },
+      {
+        "name": "주민등록번호",
+        "type": "정보유형"
+      },
+      {
+        "name": "여권번호",
+        "type": "정보유형"
+      },
+      {
+        "name": "운전면허번호",
+        "type": "정보유형"
+      },
+      {
+        "name": "외국인등록번호",
+        "type": "정보유형"
+      },
+      {
+        "name": "암호화",
+        "type": "의무"
+      },
+      {
+        "name": "안전성 확보 조치",
+        "type": "의무"
+      },
+      {
+        "name": "과징금",
+        "type": "제재"
+      },
+      {
+        "name": "징역",
+        "type": "제재"
+      },
+      {
+        "name": "벌금",
+        "type": "제재"
+      },
+      {
+        "name": "과태료",
+        "type": "제재"
+      }
+    ],
+    "relations": [
+      {
+        "source": "고유식별정보",
+        "relation": "필요의무",
+        "target": "암호화"
+      },
+      {
+        "source": "고유식별정보",
+        "relation": "필요의무",
+        "target": "안전성 확보 조치"
+      },
+      {
+        "source": "고유식별정보",
+        "relation": "위반시제재",
+        "target": "과징금"
+      },
+      {
+        "source": "고유식별정보",
+        "relation": "위반시제재",
+        "target": "징역"
+      },
+      {
+        "source": "고유식별정보",
+        "relation": "위반시제재",
+        "target": "벌금"
+      },
+      {
+        "source": "고유식별정보",
+        "relation": "위반시제재",
+        "target": "과태료"
+      },
+      {
+        "source": "개인정보처리자",
+        "relation": "보호주체",
+        "target": "보호위원회"
+      },
+      {
+        "source": "고유식별정보",
+        "relation": "근거법령",
+        "target": "제24조"
+      },
+      {
+        "source": "제24조",
+        "relation": "포함",
+        "target": "제15조제2항"
+      },
+      {
+        "source": "제24조",
+        "relation": "포함",
+        "target": "제17조제2항"
+      },
+      {
+        "source": "주민등록번호",
+        "relation": "하위유형",
+        "target": "고유식별정보"
+      },
+      {
+        "source": "여권번호",
+        "relation": "하위유형",
+        "target": "고유식별정보"
+      },
+      {
+        "source": "운전면허번호",
+        "relation": "하위유형",
+        "target": "고유식별정보"
+      },
+      {
+        "source": "외국인등록번호",
+        "relation": "하위유형",
+        "target": "고유식별정보"
+      }
+    ]
+  },
+  {
+    "nodes": [
+      {
+        "name": "주민등록번호",
+        "type": "정보유형"
+      },
+      {
+        "name": "고유식별정보",
+        "type": "정보유형"
+      },
+      {
+        "name": "개인정보처리자",
+        "type": "주체"
+      },
+      {
+        "name": "법정대리인",
+        "type": "주체"
+      },
+      {
+        "name": "제24조의2",
+        "type": "법조항"
+      },
+      {
+        "name": "제21조의2",
+        "type": "법조항"
+      },
+      {
+        "name": "암호화",
+        "type": "의무"
+      },
+      {
+        "name": "안전성 확보 조치",
+        "type": "의무"
+      },
+      {
+        "name": "주민등록번호 대체가입수단",
+        "type": "의무"
+      }
+    ],
+    "relations": [
+      {
+        "source": "주민등록번호",
+        "relation": "하위유형",
+        "target": "고유식별정보"
+      },
+      {
+        "source": "주민등록번호",
+        "relation": "필요의무",
+        "target": "암호화"
+      },
+      {
+        "source": "개인정보처리자",
+        "relation": "필요의무",
+        "target": "안전성 확보 조치"
+      },
+      {
+        "source": "주민등록번호",
+        "relation": "근거법령",
+        "target": "제24조의2"
+      },
+      {
+        "source": "주민등록번호",
+        "relation": "근거법령",
+        "target": "제21조의2"
+      },
+      {
+        "source": "주민등록번호",
+        "relation": "필요의무",
+        "target": "주민등록번호 대체가입수단"
+      }
+    ]
+  }
+]
